@@ -11,10 +11,11 @@ export default () => {
         <Markdown
           source={`
 This is our blog post.
-Yes. We can have a [link](/link).
+Yes. We can have a [link](/p/${router.query.id}).
 And we can have a title as well.
 
-### This is a title
+This is a title 
+### ${router.query.id}
 
 And here's the content.
       `}
